@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial 1</title>
+    <title>Taller 2</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
@@ -16,7 +16,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Taller TypeScript 1</h1>
+                <h1>Taller TypeScript 2</h1>
                 <p>TV series management</p>
             </div>
         </div>
@@ -36,7 +36,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-8">
                 <table class="table">
                     <thead>
                         <tr>
@@ -46,15 +46,21 @@
                             <th scope="col">Seasons</th>
                         </tr>
                     </thead>
-                    <tbody id="series">
+                    <tbody id="seriesTable">
                     </tbody>
-                </table>
-                <!-- texto que dice el promedio de temporadas de todas las series-->
-                <p id="averageSeasons">
-                    uwu
-                </p>
 
+                    <!-- Promedio de temporadas de todas las series-->
+
+                    <tfoot>
+                        <tr>
+                            <td id="averageSeasons"></td>
+                        </tr>
+                </table>
             </div>
+
+            <!-- Card para las series -->
+
+            <div class="col" id="seriesCard"> </div>
         </div>
     </div>
 
